@@ -1,7 +1,7 @@
 import {useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
-import {onPointerDown, onPointerDown} from "@/components/selectFace";
+import {onPointerDown} from "@/components/onPointerDown";
 
 // define the colors of the Rubik's Cube
 const COLORS = [

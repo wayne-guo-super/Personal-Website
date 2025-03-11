@@ -9,7 +9,7 @@ import * as THREE from "three";
 
 import rotateFace from "@/components/rotateFace";
 import {createCubies, Cubie} from "@/components/createCube";
-import {onPointerDown} from "@/components/selectFace";
+import {onPointerDown} from "@/components/onPointerDown";
 
 
 const scene = new THREE.Scene();

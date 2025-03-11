@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { animated, useSpring } from "@react-spring/three";
+//import { animated, useSpring } from "@react-spring/three";
 
 const rotateFace = (layer: any, axis: "x"|"y"|"z", direction: number) => {
     const angle = Math.PI / 2 * direction;
@@ -16,7 +16,7 @@ const rotateFace = (layer: any, axis: "x"|"y"|"z", direction: number) => {
         }
         // Change the color of the cube
         cube.material.forEach((material: THREE.Material) => {
-            //(material as THREE.MeshPhysicalMaterial).color = newColor;
+            (material as THREE.MeshPhysicalMaterial).color = newColor;
         });
     });
 

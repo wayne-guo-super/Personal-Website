@@ -14,9 +14,13 @@ const rotateFace = (layer: THREE.Mesh[], axis: "x"|"y"|"z", direction: number) =
             cube.rotation.z += angle
         }
         // Change the color of the cube
-        cube.material.forEach((material: THREE.Material) => {
-            (material as THREE.MeshPhysicalMaterial).color = newColor;
-        });
+        if (Array.isArray(cube.material)) {
+            cube.material.forEach((material: THREE.Material) => {
+                (material as THREE.MeshPhysicalMaterial).color = newColor;
+            });
+        } else {
+            (cube.material as THREE.MeshPhysicalMaterial).color = newColor;
+        }
     });
 
 };

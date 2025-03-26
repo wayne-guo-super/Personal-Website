@@ -2,7 +2,7 @@ import * as THREE from "three";
 
 const rotateFace = (layer: THREE.Mesh[], axis: "x"|"y"|"z", direction: number) => {
     const angle = Math.PI / 2 * direction;
-    const newColor = new THREE.Color(0xff0000); // Example color: red
+    //const newColor = new THREE.Color(0xff0000); // Example color: red
     layer.forEach(cube=> {
         if (axis === "x") {
             cube.rotation.x += angle;
@@ -13,14 +13,12 @@ const rotateFace = (layer: THREE.Mesh[], axis: "x"|"y"|"z", direction: number) =
         else if (axis === "z") {
             cube.rotation.z += angle
         }
-        // Change the color of the cube
-        if (Array.isArray(cube.material)) {
-            cube.material.forEach((material: THREE.Material) => {
-                (material as THREE.MeshPhysicalMaterial).color = newColor;
-            });
-        } else {
-            (cube.material as THREE.MeshPhysicalMaterial).color = newColor;
-        }
+        /*
+                // Change the color of the cube
+        cube.material.forEach((material: THREE.Material) => {
+            (material as THREE.MeshPhysicalMaterial).color = newColor;
+        });
+         */
     });
 
 };

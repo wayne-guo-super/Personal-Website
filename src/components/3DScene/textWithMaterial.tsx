@@ -3,10 +3,10 @@ import { Text3D, useMatcapTexture } from "@react-three/drei";
 
 function TextWithMaterial() {
     const [matcap] = useMatcapTexture("787165_DAD9CD_9DC0CE_36302A", 128);
-    const [text, setText] = useState("ZhengWei Guo");
+    const [text, setText] = useState("Hello there");
 
     useEffect(() => {
-        const texts = ["ZhengWei Guo", "Hello World", "React Three Fiber"];
+        const texts = ["welcome to...", "Wayne's portfolio", "Hello there"];
         let index = 0;
         const interval = setInterval(() => {
             index = (index + 1) % texts.length;

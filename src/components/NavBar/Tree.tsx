@@ -12,10 +12,10 @@ const Tree: React.FC<{
 }> = ({ children, name, defaultOpen = false, style }) => {
     const [isOpen, setOpen] = useState(defaultOpen)
 
-    // 自动判断图标
+    // Icon decision
     const Icon = Icons[`${children ? (isOpen ? 'Minus' : 'Plus') : 'Close'}SquareO`]
 
-    // Framer Motion variants 动画
+    // Framer Motion variants
     const variants = {
         open: { opacity: 1, height: 'auto', y: 0, transition: { duration: 0.3, ease: 'easeOut' } },
         closed: { opacity: 0, height: 0, y: 20, transition: { duration: 0.3, ease: 'easeIn' } },

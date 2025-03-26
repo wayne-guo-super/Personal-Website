@@ -12,11 +12,12 @@ export const Container = styled.div`
     overflow: hidden;
     font-family: ui-monospace, monospace;
     font-size: 14px;
+    font-weight: bold;
     line-height: 21px;
     user-select: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 `
 
 export const Frame = styled.div`

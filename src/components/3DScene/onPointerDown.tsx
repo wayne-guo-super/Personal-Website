@@ -1,8 +1,6 @@
 import * as THREE from "three";
-import { OrbitControls } from "@react-three/drei";
-import { useEffect, useState } from "react";
 
-import {selectFace} from "@/components/selectFace";
+import {selectFace} from "@/components/3DScene/selectFace";
 
 const onPointerDown = (startEvent: any, camera: THREE.Camera, scene: THREE.Scene, setOrbitEnabled: (enabled: boolean) => void) => {
     startEvent.stopPropagation();

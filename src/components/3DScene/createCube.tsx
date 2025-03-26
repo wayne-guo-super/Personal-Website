@@ -1,7 +1,4 @@
 import {useThree } from "@react-three/fiber";
-import * as THREE from "three";
-
-import {onPointerDown} from "@/components/onPointerDown";
 
 // define the colors of the Rubik's Cube
 const COLORS = [
@@ -46,7 +43,8 @@ const Cubie = ({ position, onPointerDown, setOrbitEnabled }: any) => {
                     attach={`material-${i}`}
                     color={color}
                     transmission={0.9}  // 玻璃透光效果
-                    roughness={0}
+                    metalness={1}
+                    roughness={3}
                     clearcoat={1}       // 高光反射
                     emissive={color}    // 发光
                     emissiveIntensity={0.5}

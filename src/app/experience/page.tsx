@@ -2,11 +2,9 @@
 
 import Image from 'next/image'
 import {  Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle,} from "@/components/ui/card"
-import {Button} from "@/components/ui/button";
 import Footer from "@/components/Footer/footer";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { experience } from "@/data/experience";
-import {Badge} from "@/components/ui/badge"; // 引入数据
+import {Badge} from "@/components/ui/badge";
 export default function Experience() {
     return (
         <div className="container mt-50 mx-auto p-6">

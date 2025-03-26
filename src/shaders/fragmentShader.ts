@@ -1,3 +1,4 @@
+export default `
 varying vec3 vPosition;
 varying vec3 vNormal;
 
@@ -23,3 +24,4 @@ void main() {
     vec3 finalColor = baseColor * (diff + ambient) + lightColor * spec;
     gl_FragColor = vec4(finalColor, 1);
 }
+`;

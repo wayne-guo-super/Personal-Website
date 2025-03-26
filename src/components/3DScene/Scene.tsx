@@ -19,7 +19,6 @@ const Scene = () => {
         <Canvas camera={{ position: [4, 4, 4] }}>
             {/* ambient and directional light */}
             <ambientLight intensity={1} />
-            <hemisphereLight skyColor={'#ffffff'} groundColor={'#444444'} intensity={0.3} />
             <directionalLight position={[2, 2, 2]} intensity={2.0}/>
             {/* Rubik's Cube 3D group */}
             <group ref={groupRef}>

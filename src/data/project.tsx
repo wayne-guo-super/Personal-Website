@@ -19,7 +19,7 @@ export const projects = [
         description: "",
         skills: ["C++", "OpenGL", "shaders"],
         image: "/project-images/openGL-showcase.webp",
-        video_link: "https://enter-nickname.com/at_disco_dyn.mov",
+        link: "/source/at_disco_dyn.mov",
     },
     {
         title: "Mentor Hub",

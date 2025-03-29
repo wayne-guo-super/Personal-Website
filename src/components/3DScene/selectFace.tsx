@@ -10,7 +10,7 @@ const selectFace = (position: THREE.Vector3, axis: "x"|"y"|"z" , direction: numb
         const group = scene.children.find(child => child.type === "Group");
         if (!group) return;
         layer = group.children.filter(child => child.position.x === position.x) as THREE.Mesh[];
-        console.log("rotate layer x", layer[0].position);
+        //console.log("rotate layer x", layer[0].position);
         rotateFace(layer, axis, direction);
     }
     else if (axis === "y") {

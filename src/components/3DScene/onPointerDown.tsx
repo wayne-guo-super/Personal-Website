@@ -5,9 +5,10 @@ import {selectFace} from "@/components/3DScene/selectFace";
 const onPointerDown = (startEvent: any, camera: THREE.Camera, scene: THREE.Scene, setOrbitEnabled: (enabled: boolean) => void) => {
     startEvent.stopPropagation();
 
-    console.log("start", startEvent.clientX, startEvent.clientY);
+    //console.log("start", startEvent.clientX, startEvent.clientY);
 
-    console.log("start2", startEvent.clientX, startEvent.clientY);
+    //console.log("start2", startEvent.clientX, startEvent.clientY);
+
     // Face selection
     // create Raycaster
     const raycaster = new THREE.Raycaster();
@@ -24,17 +25,17 @@ const onPointerDown = (startEvent: any, camera: THREE.Camera, scene: THREE.Scene
     const intersects = raycaster.intersectObjects(scene.children);
 
     if (intersects.length > 0) {
-        setOrbitEnabled(false); // ✅ 用外部传进来的函数控制 OrbitControls
+        setOrbitEnabled(false); // deactivate OrbitControls
     }
 
     // get the object position
     const position  = intersects[0]?.object.position ?? -1;
-    console.log("obj_pos", position);
+    //console.log("obj_pos", position);
 
     // Drag direction
     const onPointerUp = (endEvent: PointerEvent) => {
         endEvent.stopPropagation();
-        console.log("end", endEvent.clientX, endEvent.clientY);
+        //console.log("end", endEvent.clientX, endEvent.clientY);
 
         // calculate the mouse movement on 2D
         const dx = endEvent.clientX - startEvent.clientX;
@@ -52,24 +53,24 @@ const onPointerDown = (startEvent: any, camera: THREE.Camera, scene: THREE.Scene
 
         // convert the vector to local space
         const absLocal = new THREE.Vector3(Math.abs(moveVector.x), Math.abs(moveVector.x), Math.abs(moveVector.z));
-        console.log("objVec", absLocal);
+        //console.log("objVec", absLocal);
 
         //decide the axis to rotate based on the largest component
         if (dx_Abs > dy_Abs && dx_Abs > dz_Abs) {
             // rotate around X
             const direction = (absLocal as any)["x"] > 0 ? 1 : -1;
             selectFace(position, "y", direction, scene);
-            console.log("rotate around X");
+            //console.log("rotate around X");
         } else if (dy_Abs > dx_Abs && dy_Abs > dz_Abs) {
             // rotate around Y
             const direction = (absLocal as any)["y"] > 0 ? 1 : -1;
             selectFace(position, "x", direction, scene);
-            console.log("rotate around Y");
+            //console.log("rotate around Y");
         } else {
             // rotate around Z
             const direction = (absLocal as any)["z"] > 0 ? 1 : -1;
             selectFace(position, "z", direction, scene);
-            console.log("rotate around Z");
+            //console.log("rotate around Z");
         }
 
         // 移除监听，避免多次触发

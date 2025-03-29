@@ -9,8 +9,7 @@ export default function Menu() {
             <Tree name="menu" defaultOpen>
                 <Tree name={<Link href="/about">about</Link>} style={{ color: '#37ceff' }} />
                 <Tree name={"booth"}>
-                    <Tree name={<Link href="/experience">experience</Link>} style={{ color: '#37ceff' }} />
-                    <Tree name={<Link href="/project">project</Link>} style={{ color: '#37ceff' }} />
+                    <Tree name={"soon..."}></Tree>
                 </Tree>
                 <Tree name="contact">
                     <Tree name={<Link href="https://www.linkedin.com/in/zhengwei-guo">LinkedIn</Link>} style={{ color: '#37ceff' }}/>

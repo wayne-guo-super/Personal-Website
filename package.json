@@ -25,6 +25,7 @@
     "tw-animate-css": "^1.2.4"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250327.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.0.14",
     "@types/node": "^20",

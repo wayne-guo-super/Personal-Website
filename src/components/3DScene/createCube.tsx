@@ -32,7 +32,7 @@ const Cubie = ({ position, onPointerDown, setOrbitEnabled }: any) => {
         <mesh
             position={position}
             onPointerDown={(event: any) => onPointerDown(event, camera, scene, setOrbitEnabled)}
-            onClick={() => { console.log("click_cubie")}}
+            //onClick={() => { console.log("click_cubie")}}
         >
             {/* define the size*/}
             <boxGeometry args={[0.95, 0.95, 0.95]} />

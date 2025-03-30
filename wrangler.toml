@@ -3,6 +3,9 @@ name = "portfolio"
 pages_build_output_dir = "out"
 compatibility_date = "2025-03-14"
 
+[build]
+node_version = "20.11.0"
+
 [env.production.vars]
 NODE_VERSION = "20.11.0"
 

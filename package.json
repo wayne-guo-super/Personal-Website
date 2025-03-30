@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "wrangler pages dev --r2=source",
+    "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.3",
@@ -25,6 +28,7 @@
     "tw-animate-css": "^1.2.4"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
     "@cloudflare/workers-types": "^4.20250327.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.0.14",

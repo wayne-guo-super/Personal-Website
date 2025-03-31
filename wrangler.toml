@@ -16,3 +16,5 @@ NODE_VERSION = "20.11.0"
 [[env.production.r2_buckets]]
 bucket_name = "personal-website"
 binding = "source"
+
+#npx wrangler pages download config   - download the updated config file

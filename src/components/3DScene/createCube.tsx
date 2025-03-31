@@ -1,4 +1,11 @@
+import * as THREE from "three";
 import {useThree } from "@react-three/fiber";
+
+interface CubieProps {
+    position: [number, number, number];
+    onPointerDown: (event: PointerEvent, camera: THREE.Camera, scene: THREE.Scene, setOrbitEnabled: (enabled: boolean) => void) => void;
+    setOrbitEnabled: (enabled: boolean) => void;
+}
 
 // define the colors of the Rubik's Cube
 const COLORS = [
@@ -24,14 +31,14 @@ const createCubies = () => {
 };
 
 ///single cube component (size, material)
-const Cubie = ({ position, onPointerDown, setOrbitEnabled }: any) => {
+const Cubie = ({ position, onPointerDown, setOrbitEnabled }: CubieProps) => {
 
     const {camera, scene} = useThree();
 
     return (
         <mesh
             position={position}
-            onPointerDown={(event: any) => onPointerDown(event, camera, scene, setOrbitEnabled)}
+            onPointerDown={(event: PointerEvent) => onPointerDown(event, camera, scene, setOrbitEnabled)}
             //onClick={() => { console.log("click_cubie")}}
         >
             {/* define the size*/}

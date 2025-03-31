@@ -1,7 +1,7 @@
 "use client"
 
 import React, {JSX, useState} from 'react'
-import { Container, Frame, Title, Content, ToggleIcon } from './styles'
+import { Frame, Title, Content, ToggleIcon } from './styles'
 import * as Icons from '@/icons'
 
 const Tree: React.FC<{

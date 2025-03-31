@@ -2,7 +2,7 @@ import * as THREE from "three";
 
 import {selectFace} from "@/components/3DScene/selectFace";
 
-const onPointerDown = (startEvent: any, camera: THREE.Camera, scene: THREE.Scene, setOrbitEnabled: (enabled: boolean) => void) => {
+const onPointerDown = (startEvent: PointerEvent, camera: THREE.Camera, scene: THREE.Scene, setOrbitEnabled: (enabled: boolean) => void) => {
     startEvent.stopPropagation();
 
     //console.log("start", startEvent.clientX, startEvent.clientY);
@@ -58,17 +58,17 @@ const onPointerDown = (startEvent: any, camera: THREE.Camera, scene: THREE.Scene
         //decide the axis to rotate based on the largest component
         if (dx_Abs > dy_Abs && dx_Abs > dz_Abs) {
             // rotate around X
-            const direction = (absLocal as any)["x"] > 0 ? 1 : -1;
+            const direction = (absLocal as THREE.Vector3)["x"] > 0 ? 1 : -1;
             selectFace(position, "y", direction, scene);
             //console.log("rotate around X");
         } else if (dy_Abs > dx_Abs && dy_Abs > dz_Abs) {
             // rotate around Y
-            const direction = (absLocal as any)["y"] > 0 ? 1 : -1;
+            const direction = (absLocal as THREE.Vector3)["y"] > 0 ? 1 : -1;
             selectFace(position, "x", direction, scene);
             //console.log("rotate around Y");
         } else {
             // rotate around Z
-            const direction = (absLocal as any)["z"] > 0 ? 1 : -1;
+            const direction = (absLocal as THREE.Vector3)["z"] > 0 ? 1 : -1;
             selectFace(position, "z", direction, scene);
             //console.log("rotate around Z");
         }

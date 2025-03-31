@@ -1,7 +1,6 @@
 "use client"
 
 import * as THREE from "three";
-import {BackSide} from "three";
 import fragmentShader from "@/shaders/fragmentShader";
 import vertexShader from "@/shaders/vertexShader";
 

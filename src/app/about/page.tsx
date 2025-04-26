@@ -52,9 +52,17 @@ export default function About() {
                             <CardContent className="p-4">
                                 <CardTitle>{project.title}</CardTitle>
                                 <p className="text-gray-500">{project.description}</p>
-                                <Button className="mt-4 bg-cyan-200 hover:bg-cyan-400 text-black-400 font-bold py-2 px-4 rounded" onClick={() => window.open(project.link, "_blank")}>
+                                <Button className="mt-4 mr-4 bg-cyan-200 hover:bg-cyan-400 text-black-400 font-bold py-2 px-4 rounded" onClick={() => window.open(project.link, "_blank")}>
                                     View Project
                                 </Button>
+                                {project.github && (
+                                    <Button
+                                        className="mt-4 bg-cyan-200 hover:bg-cyan-400 text-black-400 font-bold py-2 px-4 rounded"
+                                        onClick={() => window.open(project.github, "_blank")}
+                                    >
+                                        GitHub
+                                    </Button>
+                                )}
                             </CardContent>
                             <CardFooter>
                                 {project.skills.map((skill, idx) => (

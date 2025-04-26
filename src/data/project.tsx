@@ -6,6 +6,7 @@ export const projects = [
         skills: ["Next.JS", "Three.js", "React Three Fiber", "R2 Storage"],
         image: "/project-images/portfolio.webp",
         link: "./",
+        github: "https://github.com/wayne-guo-super/Personal-Website",
     },
     {
         title: "ACC Simulator",
@@ -20,6 +21,7 @@ export const projects = [
         skills: ["C++", "OpenGL", "shaders"],
         image: "/project-images/openGL-showcase.webp",
         link: "/source/at_disco_dyn.mov",
+        github: "https://github.com/wayne-guo-super/OpenGL_showcase",
     },
     {
         title: "Mentor Hub",
@@ -27,6 +29,7 @@ export const projects = [
         skills: ["React", "HCD"],
         image: "/project-images/mentorHub.webp",
         link: "https://mentorhub.amrthabit.com",
+        github: "https://github.com/wayne-guo-super/MentorHub",
     },
     {
         title: "War-Map",
@@ -34,5 +37,6 @@ export const projects = [
         skills: ["React", "Google Maps API"],
         image: "/project-images/war-map.webp",
         link: "https://devpost.com/software/mapping-humanity-israel-palestine-war?_gl=1*1x574fq*_gcl_au*NDY5NDE1NjUzLjE3NDI1MzExMTU.*_ga*MTkzNzE3MTkuMTc0MjUzMTExNQ..*_ga_0YHJK3Y10M*MTc0Mjg1MzI2Mi4zLjEuMTc0Mjg1MzI2Ny4wLjAuMA..",
+        github: "https://github.com/LongpanZhou/Israel-Palestine-War-Map",
     },
 ];

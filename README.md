@@ -1,2 +1,2 @@
 Personal website for my portfolio and photo booth, built with NextJS and ThreeJS.
-Check it out on https://enter-nickname.com.
+Please check it out [here](https://enter-nickname.com).

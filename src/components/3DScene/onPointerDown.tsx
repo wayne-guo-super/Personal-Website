@@ -73,7 +73,7 @@ const onPointerDown = (startEvent: PointerEvent, camera: THREE.Camera, scene: TH
             //console.log("rotate around Z");
         }
 
-        // 移除监听，避免多次触发
+        // remove the event listener
         window.removeEventListener("pointerup", onPointerUp);
         setOrbitEnabled(true); // ✅ 重新启用 OrbitControls
 

@@ -27,8 +27,8 @@ const Scene = () => {
                     <Cubie
                         key={index}
                         position={cubie.position as [number, number, number]}
-                        onPointerDown={onPointerDown} // 这里不动
-                        setOrbitEnabled={setOrbitEnabled} // 把状态函数传进去
+                        onPointerDown={onPointerDown}
+                        setOrbitEnabled={setOrbitEnabled}
                     />
                 ))}
             </group>

@@ -9,13 +9,13 @@ export default function PhotoPage() {
                 -/-
                 <div className="flex flex-col">
                     <div>
-                        <Image
+                        <img
                             src="/source/booth/DSC08501.jpg"
                             width={800}
                             height={600}
                             alt="Montreal"
                             className="shadow-lg"
-                        ></Image>
+                        ></img>
                     </div>
 
                     <div className="flex items-center md:items-start flex-col">
@@ -28,13 +28,13 @@ export default function PhotoPage() {
                 -/-
                 <div className="flex flex-col">
                     <div>
-                        <Image
+                        <img
                             src="/source/booth/DSC08832.jpg"
                             width={800}
                             height={600}
                             alt="Yangshuo"
                             className="shadow-lg"
-                        ></Image>
+                        ></img>
                     </div>
 
                     <div className="flex items-center md:items-start flex-col">
@@ -57,13 +57,13 @@ export default function PhotoPage() {
                 </p>
                 <div className="flex flex-col">
                     <div>
-                        <Image
+                        <img
                             src="/source/booth/DSC08867.jpg"
                             width={800}
                             height={600}
                             alt="Yangshuo"
                             className="shadow-lg"
-                        ></Image>
+                        ></img>
                     </div>
 
                     <div className="flex items-center md:items-start flex-col">

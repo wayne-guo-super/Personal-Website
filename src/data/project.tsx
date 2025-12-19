@@ -2,7 +2,7 @@
 export const projects = [
     {
         title: "Portfolio Page",
-        description: "Personal website.",
+        description: "check it out!",
         skills: ["Next.JS", "Three.js", "React Three Fiber", "R2 Storage"],
         image: "/project-images/portfolio.webp",
         link: "./",
@@ -14,6 +14,13 @@ export const projects = [
         skills: ["C++", "NumPy", "PID Controller"],
         image: "/project-images/acc-simulator.webp",
         link: "/source/ACC_simulation.mov",
+    },
+    {
+        title: "Rockery",
+        description: "A Chinese LingNan garden style scene created by Blender with waterfall animation and particle system.",
+        skills: ["Blender", "Particle System"],
+        image: "/project-images/rockery.webp",
+        github: "https://github.com/wayne-guo-super/rockery",
     },
     {
         title: "OpenGL Showcase",
@@ -29,7 +36,7 @@ export const projects = [
         skills: ["React", "HCD"],
         image: "/project-images/mentorHub.webp",
         link: "https://mentorhub.amrthabit.com",
-        github: "https://github.com/wayne-guo-super/MentorHub",
+        github: "https://github.com/amrthabit/mentorhub",
     },
     {
         title: "War-Map",

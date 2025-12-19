@@ -1,12 +1,12 @@
-import Menu from './menu'
+import NaviMenu from './menu'
 
 export default function NavBar() {
     return(
-        <nav className="fixed top-0 left-0 w-full shadow-md p-4 flex items-center backdrop-filter backdrop-blur-md bg-opacity-30">
-            <Menu/>
-            <button className="mt-1 font-bold font-mono text-xl text-gray-500">
+        <nav className="bg-white ring-5 ring-[#38afb5] w-full shadow-xl flex justify-center items-center">
+            <button className="mt-1 font-bold font-mono text-xl text-gray-500 mr-3">
                 <a href="./">enter nickname..</a>
             </button>
+            <NaviMenu/>
         </nav>
         )
 }

@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <Fragment>
-            <div className="fixed bottom-0 left-0 w-full text-center p-0.5 text-gray-300 font-mono">
+            <div className="w-full bg-[#0f524f] text-center text-gray-300 font-mono">
                 <p>{`© ${year}. Designed and Developed by Wayne Guo.`}</p>
             </div>
         </Fragment>

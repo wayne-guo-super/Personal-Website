@@ -10,7 +10,7 @@ export default function PhotoPage() {
                 <div className="flex flex-col">
                     <div>
                         <Image
-                            src="/test/DSC08501.webp"
+                            src="/source/booth/DSC08501.jpg"
                             width={800}
                             height={600}
                             alt="Montreal"
@@ -29,7 +29,7 @@ export default function PhotoPage() {
                 <div className="flex flex-col">
                     <div>
                         <Image
-                            src="/test/DSC08832.jpg"
+                            src="/source/booth/DSC08832.jpg"
                             width={800}
                             height={600}
                             alt="Yangshuo"
@@ -58,7 +58,7 @@ export default function PhotoPage() {
                 <div className="flex flex-col">
                     <div>
                         <Image
-                            src="/test/DSC08867.jpg"
+                            src="/source/booth/DSC08867.jpg"
                             width={800}
                             height={600}
                             alt="Yangshuo"

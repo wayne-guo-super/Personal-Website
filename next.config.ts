@@ -4,7 +4,17 @@ const nextConfig: NextConfig = {
     /* config options here */
     output: 'export',
 
-    images: { unoptimized: true },
+    images: {
+        unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'enter-nickname.com',
+                port: '',
+                pathname: '/source/**',
+            },
+        ]
+    },
 
     eslint: {
         ignoreDuringBuilds: false,

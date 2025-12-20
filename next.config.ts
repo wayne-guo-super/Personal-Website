@@ -10,8 +10,12 @@ const nextConfig: NextConfig = {
             {
                 protocol: 'https',
                 hostname: 'enter-nickname.com',
-                port: '',
-                pathname: '/source/**',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.enter-nickname.com',
+                pathname: '/**',
             },
         ]
     },

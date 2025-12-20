@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function PhotoPage() {
     return (
@@ -8,13 +9,13 @@ export default function PhotoPage() {
                 -/-
                 <div className="flex flex-col">
                     <div>
-                        <img
-                            src="/source/booth/DSC08501.jpg"
+                        <Image
+                            src="https://enter-nickname.com/booth/DSC08501.jpg"
                             width={800}
                             height={600}
                             alt="Montreal"
                             className="shadow-lg"
-                        ></img>
+                        ></Image>
                     </div>
 
                     <div className="flex items-center md:items-start flex-col">
@@ -27,13 +28,13 @@ export default function PhotoPage() {
                 -/-
                 <div className="flex flex-col">
                     <div>
-                        <img
-                            src="/source/booth/DSC08832.jpg"
+                        <Image
+                            src="https://enter-nickname.com/booth/DSC08832.jpg"
                             width={800}
                             height={600}
                             alt="Yangshuo"
                             className="shadow-lg"
-                        ></img>
+                        ></Image>
                     </div>
 
                     <div className="flex items-center md:items-start flex-col">
@@ -56,13 +57,13 @@ export default function PhotoPage() {
                 </p>
                 <div className="flex flex-col">
                     <div>
-                        <img
-                            src="/source/booth/DSC08867.jpg"
+                        <Image
+                            src="https://enter-nickname.com/booth/DSC08867.jpg"
                             width={800}
                             height={600}
                             alt="Yangshuo"
                             className="shadow-lg"
-                        ></img>
+                        ></Image>
                     </div>
 
                     <div className="flex items-center md:items-start flex-col">

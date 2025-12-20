@@ -9,12 +9,7 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'enter-nickname.com',
-                pathname: '/**',
-            },
-            {
-                protocol: 'https',
-                hostname: 'www.enter-nickname.com',
+                hostname: 'asset.enter-nickname.com',
                 pathname: '/**',
             },
         ]
